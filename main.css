@@ -5,15 +5,17 @@
 }
 
 body{
-    background: #2C2F33;
+    background-image: url(bg.jpg);
     background-size: cover;
 }
 
 .navbar{
     height: 80px;
+    background: rgba(0, 0, 0, 0.5)
 }
 
  .logo{
+    /* margin: 10px 50px; */
     height: 60;
 } 
 
@@ -30,290 +32,236 @@ body{
 
 .menu li a{
     letter-spacing: 2px;
+    padding: 5px 10px;
     text-decoration: none;
     font-family: sans-serif;
-    color: white;
-    padding: 5px 10px
+    color: #fff;
 }
 
 .menu li a:hover{
-    color: white;
-    background: #7289DA;
+    color: #000;
+    background: white;
 }
 
-.dahead{
-    border-top: 2px solid #99AAB5;
+.hdme{
+    background-image: url(binary.jpg);
+    background-position: cover;
+    background-size: 100% auto;
+    border-top: 4px solid gray; 
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    min-height: 200px;
+    padding: 0 20px;
     position: relative;
     text-align: center;
 }
 
-.dahead h1{
-    font-size: 4rem;
-    letter-spacing: 2px;
-    color: white;
-}
-
-.dahead p{
-    font-size: 3rem;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.dabody{
-    border-top: 2px solid #99AAB5;
-    position: relative;
-    text-align: center;
-}
-
-.dabody h1{
-    font-size: 3rem;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.dabody h3{
-    font-size: 2rem;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.knowsxd{
-    border-top: 2px solid #99AAB5;
-    position: relative;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.knowsxd h1{
-    font-size: 3rem;
-    color: white;
-}
-
-.knowsxd h3{
-    font-size: 2rem;
-    color: white;
-}
-
-.knowsxd h4{
-    font-size: 1rem;
-    color: #2C2F33
-}
-
-.knowsxd progress {
-    height: 1.2em;
-    width: 100%;
-    position: relative;
-    background-color: red; /*  IDK WHY BUT IS IDIOT */
-  }
-  
-.knowsxd progress:before {
-    content: attr(data-label);
-    font-size: 1em;
-    position: absolute;
-    text-align: center;
-    top: 1px;
-    left: 0;
-    right: 0;
+h1, h2, h3, h4 {
+    margin: 10px 0 15px;
   }
 
-.knowsxd progress .value {
+.hdme h1{
+      font-size: 4rem;
+      font-weight: 100;
+  }
+
+  .hdme h2{
+      margin: 5px 0;
+      font-weight: 100;
+      font-size: 2.7rem;
+  }
+
+.hdme *{
+    position: relative;
+    text-shadow: gray
+}
+
+.ido{
+    background: transparent;
+    position: relative;
+    text-align: center;
+    color: white
+   /* border: 2px solid #fff */
+}
+
+.ido:hover{
+    color: black;
+    text-shadow: 0 0 7px red
+}
+
+.ido h1{
+    font-size: 3rem;
+}
+
+.ido p{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.thgs{
+    background: transparent;
+    position: relative;
+}
+
+.thgs p{
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    border: 1px solid #fff;
+    text-shadow: 0 0 3px red;
+}
+
+.thgs p:hover{
+    font-size: 1.3rem;
+    color: #000;
+    text-shadow: 0 0 3px green
+}
+
+.thgs h1{
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 7px green
+    
+}
+
+.thgs h1:hover{
+    color: #fff;
+    text-shadow: 2px 2px 6px blue
+}
+
+.thgs h2{
+    font-size: 1.1rem;
+    color: black;
+    text-shadow: 2px 2px 7px green;
+    text-align: center;
+}
+
+.thgs h2:hover{
+    color: #fff;
+    text-shadow: 2px 2px 7px blue;
+}
+
+.thgs li{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.thgs li:hover{
+    font-size: 20px;
+    color: #000;
+    text-shadow: 0 0 2px red
+}
+
+.contact{
+    color: #fff;
+    background: transparent;
+    list-style: none;
+    margin: 8px;
+}
+
+.contact li{
     display: inline-block;
-    height: 100%;
-  }
+    margin: 0px 5px;
+}
 
-.knowsxd progress::-webkit-progress-bar {
-    background-color: #99AAB5;
-  }
-  
-.knowsxd progress::-webkit-progress-value {
-    background-color: #7289DA;
-  }
-  
-.knowsxd progress::-moz-progress-bar {
-    background-color: #7cc4ff;
-  }
-
-.smtxtxd{
-      color: white;
-      position: relative;
-      text-align: center;
-  }
-  
-.smtxtxd a{
-    color: white;
+.contact li a{
     text-decoration: none;
-}
-
-footer{
-    color: white;
-    text-align: center; 
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.products table{
-    color: white;
     text-align: center;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.contact li a.discord{
+    color: steelblue
+}
+
+.contact li a.steam{
+    color: black;
+}
+
+.contact li a.paypal{
+    color: royalblue
+}
+
+.contact li a.dbot{
+    color: white
+}
+
+table{
     margin: auto;
     border: 3px solid #fff;
     border-spacing: 10px;
     text-align: center;
+    position: relative;
     width: 1000px;
     height: 400px;
     top: 200px;
 }
 
-.products table th{
-    background: #7289DA;
+th{
+    color: #fff;
     border: 3px solid #fff;
-    border-spacing: 10px
-}
-
-.products td{
-    border: 3px solid #fff;
-    border-spacing: 10px
-}
-
-.prodtitl a{
-    color: white;;
-    text-decoration: none;
-}
-
-.prodlogs a img{
-    width: 150px;
-    height: 150px;
-}
-
-.orderinf h1{
-    text-align: center;
-    color: white;
-}
-
-.orderinf h1 a{
-    text-decoration: none;
-    color: #99AAB5
-}
-
-.orderinf h2{
-    color: white;
-    text-align: center;
-}
-
-.servinfo{
-    text-align: center;
-    position: relative;
-}
-
-.servinfo h1{
-    color: #7289DA;  
-    font-size: 3rem
-}
-
-.servinfo h3{
-    color: #7289DA;
-    font-size: 1.5rem;
-}
-
-.servinfo p{
-    color: #7289DA;
-    font-size: 1.2rem;
-}
-
-.servinfo p a{
-    color: #7cc4ff;
-    text-decoration: none;
-}
-
-.discwidget{
-    position: relative;
-    text-align: center;
-    top: 15px;
-}
-
-.invxd{
-    position: relative;
-    top: 10px;
-    text-align: center;
-}
-
-.pojinfo h1{
-    position: relative;
-    text-align: center;
-    font-size: 3rem;  
-}
-
-.pojinfo h4{
-    color: #7289DA;
-    position: relative;
-    text-align: center;
-    top: 50px;
-    font-size: 2rem; 
-}
-
-.lolping{
-    border: 4px solid #fff;
-}
-
-.lolping a{
-    text-decoration: none;
-    color: #7289DA;
-}
-
-.lolping a img{
-    width: 100px;
-    height: 100px;
-}
-
-.odarbotxd23{
-    border: 4px solid #fff;
-}
-
-.odarbotxd23 a{
-    text-decoration: none;
-    color: #7289DA;
-}
-
-.odarbotxd23 a img{
-    width: 100px;
-    height: 100px;
-}
-
-.forpoj{
-    text-align: center;
-    color: #7289DA;
-    font-size: 2.5rem;
-}
-
-.donimgs{
-    top: 50px;
-}
-
-.donimgs a{
-    text-decoration:  none;
-}
-
-.donimgs a img{
-    text-align: center;   
-    width: 300px;
-    height: 300px;
-    border: 2px solid #fff
-}
-
-.donimgs th{
-    border: 2px solid #fff;
     border-spacing: 10px;
+}
+
+th:hover{
+    color: black;
+    background: white;
+}
+
+th a{
+    text-decoration: none;
+    color: lightseagreen
+}
+
+td{
+    border: 3px solid #fff;
+    border-spacing: 10px
+}
+
+td a{
+    color: #fff;
+    text-decoration: none;
+}
+
+td a img{
+    height: 200px;
+    width: 200px;
+}
+
+.shopinfoxd{
+    top: 100px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    color: black;
+    border-left: 20px solid lime;
+    background-color: lightgrey;
+}
+
+.shopinfoxd h1{
+    font-size: 3rem;
+}
+
+.shopinfoxd h3{
     font-size: 2rem;
 }
 
-.donimgs th a {
-    color: #7289DA;
-    text-decoration: none;
-    border-spacing: 10px;
+.shopinfoxd p{
+    font-size: 1.5rem;
 }
 
-.donimgs table{
-    text-align: center;
-    position: relative;
-    margin: auto;
-    border: 3px solid #fff;
-    border-spacing: 10px;
+.shopinfoxd p a{
+    text-decoration: none;
+    color: black;
 }
+
+.daprics td{
+    color: lightseagreen;
+}
+
